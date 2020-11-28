@@ -1,0 +1,196 @@
+body{
+  background-color:  white;
+}
+
+.card img {
+  width:300px ;
+  height: 400px;
+}
+
+.h22{
+  color: red;
+}
+
+
+
+.card{
+  margin-top: 3%;
+  margin-left: 3%;
+  cursor: pointer;
+  width: 300px;
+  height: 552px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  box-shadow : 0 8px 16px black;
+  text-align: center;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  
+  
+  
+  
+}
+
+.card:hover{
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 12%;
+  
+  
+}
+
+.star{
+  color: rgb(196, 196, 21);
+  
+}
+
+.button1{
+  margin-left: 50%;
+  margin-top: 20px;
+  width: 40px;
+  border: none;
+  font-size: 30px;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  outline: none;
+  
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 300px; 
+  height: 48%; 
+  overflow: auto;  
+  background-color:whitesmoke;
+  color: black;
+  margin-left: 539px;
+  margin-top: 50px;
+  box-shadow: 0 8px 16px black;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  
+  
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+.modal-content{
+  
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+  
+  
+}
+
+.modal-content input{
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 250px;
+  height: 18px;
+  outline: none;
+  
+}
+
+.modal-content button{
+  width: 70px;
+  margin-top: 20px;
+  border: none;
+  font-size: 16px;
+  background-color: #276629;
+  color: white;
+  outline: none;
+  height: 26px;
+  border-radius: 3px;
+
+}
+
+.b1{
+  margin-left: 5px;
+}
+
+.search{
+  width: 500px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 2px solid rgb(100, 94, 94);
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  outline: none;
+  margin-left: -11%;
+  
+  
+  
+  
+  
+}
+
+
+
+
+
+.container {
+  padding-left: 535px;
+  padding-top: 30px;
+  
+}
+
+.rate{
+  padding-left: 9%;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.card p {
+  height: 1px;
+}
+
+
+
+.movie-over{
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  left: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  transform: translateY(100%);
+  overflow: auto;
+  transition: transform 0.5s ease-in-out;
+  line-height: 20px;
+  border: red 1px solid;
+  border-radius: 2px;
+  
+  
+}
+
+.card:hover .movie-over{
+  transform: translateX(0%);
+
+}
+
+.s2{
+  padding-top: 30px;
+}
